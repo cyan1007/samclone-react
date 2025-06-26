@@ -1,0 +1,43 @@
+@font-face {
+ font-family: "SS-regular";
+ src: url("/fonts/SS-regular.woff2") format("woff2");
+}
+
+@font-face {
+ font-family: "SS-bold";
+ src: url("/fonts/SS-bold.woff2") format("woff2");
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html,
+body {
+ font-family: "SS-regular", "맑은고딕", sans-serif;
+ font-size: 10px;
+ color: #0b0d0f;
+ line-height: 1.5;
+ letter-spacing: -0.23px;
+ text-size-adjust: 100%;
+ overflow-x: hidden;
+ background-color: #fff;
+}
+ul,
+li {
+ list-style: none;
+}
+a {
+ display: block;
+ text-decoration: none;
+ color: #0b0d0f;
+}
+img {
+ border: 0;
+ vertical-align: middle;
+}
+
+.wrap {
+ width: 100%;
+}
