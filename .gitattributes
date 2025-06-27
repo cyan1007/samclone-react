@@ -1,0 +1,39 @@
+# --- 기본 텍스트 파일 설정 ---
+* text=auto eol=lf
+
+# --- 명시적으로 LF 설정 (프론트엔드 프로젝트에 자주 사용되는 확장자) ---
+*.js     text eol=lf
+*.jsx    text eol=lf
+*.ts     text eol=lf
+*.tsx    text eol=lf
+*.json   text eol=lf
+*.css    text eol=lf
+*.scss   text eol=lf
+*.html   text eol=lf
+*.md     text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.sh     text eol=lf
+*.env    text eol=lf
+
+# --- Windows에서도 정상 작동하도록 Bash 스크립트 등은 LF 유지 ---
+*.sh     text eol=lf
+
+# --- 바이너리 또는 압축 파일은 줄바꿈 변환 금지 ---
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.mp4    binary
+*.mp3    binary
+*.zip    binary
+*.gz     binary
+*.woff   binary
+*.woff2  binary
+*.ttf    binary
+*.eot    binary
+
+# --- 특정 파일 무시 (예: IDE 설정파일) ---
+*.exe    binary
+*.dll    binary

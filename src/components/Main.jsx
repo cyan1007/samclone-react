@@ -1,8 +1,7 @@
 import "../styles/main/main.css";
-import "../styles/main/sw-banner.css";
-import "../styles/main/sw-card.css";
-import "../styles/main/sw-shortcut.css";
 import SwBanner from "./SwBanner";
+import SwCard from "./SwCard";
+import SwShortcut from "./SwShortcut";
 
 const Main = () => {
  return (
@@ -21,92 +20,7 @@ const Main = () => {
      <SwBanner />
 
      {/* <!-- 자주찾는 메뉴 모바일 --> */}
-     <div className="shortcut-wrap-mb">
-      <div className="swiper sw-shortcut">
-       <div className="swiper-wrapper">
-        <div className="swiper-slide">
-         <a href="#">
-          <img src="images/main/homepage/menu_shortcut_1.svg" alt="계약내용확인" />
-          <span>
-           계약내용
-           <br />
-           확인
-          </span>
-         </a>
-        </div>
-        <div className="swiper-slide">
-         <a href="#">
-          <img src="images/main/homepage/menu_shortcut_2.svg" alt="보험금청구" />
-          <span>
-           보험금
-           <br />
-           청구
-          </span>
-         </a>
-        </div>
-        <div className="swiper-slide">
-         <a href="#">
-          <img src="images/main/homepage/menu_shortcut_3.svg" alt="보험계약대출" />
-          <span>
-           보험계약
-           <br />
-           대출
-          </span>
-         </a>
-        </div>
-        <div className="swiper-slide">
-         <a href="#">
-          <img src="images/main/homepage/menu_shortcut_4.svg" alt="보험료납입" />
-          <span>
-           보험료
-           <br />
-           납입
-          </span>
-         </a>
-        </div>
-        <div className="swiper-slide">
-         <a href="#">
-          <img src="images/main/homepage/menu_shortcut_5.svg" alt="증명서발급" />
-          <span>
-           증명서
-           <br />
-           발급
-          </span>
-         </a>
-        </div>
-        <div className="swiper-slide">
-         <a href="#">
-          <img src="images/main/homepage/menu_shortcut_6.svg" alt="완전판매모니터링" />
-          <span>
-           완전판매
-           <br />
-           모니터링
-          </span>
-         </a>
-        </div>
-        <div className="swiper-slide">
-         <a href="#">
-          <img src="images/main/homepage/menu_shortcut_7.svg" alt="임시운전자특약" />
-          <span>
-           임시운전자
-           <br />
-           특약
-          </span>
-         </a>
-        </div>
-        <div className="swiper-slide">
-         <a href="#">
-          <img src="images/main/homepage/menu_shortcut_8.svg" alt="필요서류안내" />
-          <span>
-           필요서류
-           <br />
-           안내
-          </span>
-         </a>
-        </div>
-       </div>
-      </div>
-     </div>
+     <SwShortcut />
      {/* <!-- 자동차 고장출동, 사고접수 모바일 --> */}
      <div className="car-wrap-mb">
       <ul>
@@ -210,20 +124,7 @@ const Main = () => {
      </div>
 
      {/* <!-- 카드 스와이퍼 --> */}
-     <div className="sw-card-section">
-      {/* <!-- Swiper --> */}
-      <div className="swiper sw-card">
-       <div className="swiper-wrapper">
-        <div className="swiper-slide">Slide 1</div>
-        <div className="swiper-slide">Slide 2</div>
-        <div className="swiper-slide">Slide 3</div>
-        <div className="swiper-slide">Slide 4</div>
-       </div>
-       <div className="swiper-pagination"></div>
-       <div className="swiper-button-next"></div>
-       <div className="swiper-button-prev"></div>
-      </div>
-     </div>
+     <SwCard />
 
      {/* <!-- 사이드 배너 모바일 --> */}
      <div className="side-banner-wrap-mb">

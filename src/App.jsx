@@ -1,22 +1,12 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Modal from "./components/Modal";
-import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router";
+import Home from "./pages/Home";
 
 function App() {
  return (
-  <>
-   <div className="wrap" style={{ width: "100%" }}>
-    <Header />
-    <Main />
-    <Footer />
-   </div>
-   {/* 네비게이션 바 */}
-   <Navbar />
-   {/* 모달 */}
-   <Modal />
-  </>
+  <Routes>
+   <Route path="/" element={<Home />} />
+   <Route path="*" element={<h1>404 Not Found</h1>} />
+  </Routes>
  );
 }
 

@@ -11,14 +11,14 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 // 슬라이드 초기 데이터
 const slideData = [
- { id: 1, title: "Slide 1" },
- { id: 2, title: "Slide 2" },
- { id: 3, title: "Slide 3" },
+ { id: 1, title: "첫 번째 배너" },
+ { id: 2, title: "두 번째 배너" },
+ { id: 3, title: "세 번째 배너" },
  { id: 4, title: "새로운 이벤트 배너" },
- { id: 5, title: "Slide 5" },
- { id: 6, title: "Slide 6" },
- { id: 7, title: "Slide 7" },
- { id: 8, title: "Slide 8" },
+ { id: 5, title: "네 번째 배너" },
+ { id: 6, title: "다섯 번째 배너" },
+ { id: 7, title: "여섯 번째 배너" },
+ { id: 8, title: "일곱 번째 배너" },
 ];
 
 const SwBanner = () => {
@@ -74,13 +74,6 @@ const SwBanner = () => {
        {slide.title}
       </SwiperSlide>
      ))}
-     {/* <SwiperSlide className="swiper-slide">Slide 1</SwiperSlide>
-     <SwiperSlide className="swiper-slide">Slide 2</SwiperSlide>
-     <SwiperSlide className="swiper-slide">Slide 3</SwiperSlide>
-     <SwiperSlide className="swiper-slide">Slide 4</SwiperSlide>
-     <SwiperSlide className="swiper-slide">Slide 5</SwiperSlide>
-     <SwiperSlide className="swiper-slide">Slide 6</SwiperSlide>
-     <SwiperSlide className="swiper-slide">Slide 7</SwiperSlide> */}
     </div>
     <div className="page-nav">
      <div className="prev-btn">
